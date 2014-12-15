@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -eu
+set -o pipefail
+
+install-packages lshw python-pip ethtool lldpad hdparm sdparm pciutils
+pip install hardware
