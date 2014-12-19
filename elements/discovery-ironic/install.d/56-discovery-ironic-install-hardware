@@ -3,5 +3,5 @@
 set -eu
 set -o pipefail
 
-install-packages lshw python-pip ethtool lldpad hdparm sdparm pciutils
+install-packages lshw python-pip ethtool lldpad hdparm sdparm pciutils mcelog smartmontools
 pip install hardware

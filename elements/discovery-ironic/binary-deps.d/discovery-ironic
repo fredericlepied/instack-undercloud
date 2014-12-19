@@ -11,12 +11,14 @@ lldptool
 lscpu
 lshw
 lspci
+mcelog
 netstat
 nproc
 python
 restorecon
 sdparm
 seq
+smartctl
 sort
 ssh-keygen
 sshd

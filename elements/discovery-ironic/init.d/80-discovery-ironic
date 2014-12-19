@@ -6,8 +6,6 @@ IP="all:dhcp"
 
 set +e
 
-mknod /dev/null c 1 3
-
 exec 3>&1
 exec 4>&2
 
@@ -505,9 +503,7 @@ fi
 # It's all over netlink now
 echo "" > /proc/sys/kernel/hotplug
 
-start_udev
-
-start_mcelog
+mcelog --ignorenodev --filter --daemon --logfile /mcelog
 
 # On RHEL7, we need lvmetad to run to make {lv}* commands working
 if [ -x /sbin/lvmetad ]; then
